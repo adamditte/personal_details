@@ -1,6 +1,7 @@
 Hello <%= name %>. What is your age?
 
-<form method = "post" action = "/users_age">
-	<input type = "number"  min = "13" age = "user_age">
+<form method = "post" action = "/age">
+	<input type = "number"  min = "13" name = "age">
+	<input type = "text" name = "retrieved_name" value = <%= name%> hidden>
 	<input type = "submit">
 </form>
