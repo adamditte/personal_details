@@ -1,6 +1,11 @@
 "Wow <%= name%>, being <%= age%> must be awesome! Now, what are your three favorite numbers?
 
 <form method "post" action = "/fav_numbers">
-	<input type = "number" min = "0" name = "fav_numbers">
+	<!-- <input type = "number" min = "0" name = "fav_numbers"> -->
+	<input type = "number" min = "0" name = "favnum_1">, 
+	<input type = "number" min = "0" name = "favnum_2">, 
+	<input type = "number" min = "0" name = "favnum_3">
+	<input type = "text" name = "retrieved_name" value = <%= name%> hidden>
+	<input type = "text" name = "age" value = <%= age%> hidden>
 	<input type = "submit">
 </form>

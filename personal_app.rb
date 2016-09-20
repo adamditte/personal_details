@@ -21,9 +21,14 @@ post '/age' do
 end
 
 get '/fav_numbers' do
-	numbers = params[:fav_nums]
+	name = params[:name]
+	age = params[:age]
 	erb :favorite_numbers, :locals => {:name => name, :age => age}
 end
+
+# post '/fav_numbers' do
+# 	age = params[:age]
+# end
 
 
 
